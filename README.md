@@ -3,7 +3,9 @@ PostPilot specializes in personalized direct-mail marketing campaigns to grow cu
 
 
 ## Objectives
-Your objectives are to train a model to predict `total_30d_post_campaign_spend` and update the provided Flask API script to serve predictions made by your model. Implement your solution in Python, following professional coding practices (PEP8 compliance, modularity, clear function/class definitions, type hints). Provide either a script or Jupyter notebook that includes your technical analyses and findings. Your submission should include artifacts from the following:
+You are given historic campaign data for a specific brand who will launch additional future campaigns. Your objective is to train a model to estimate the incremental return on ad spend (iROAS) for each of the historic campaigns in the training data using the target variable `total_30d_post_campaign_spend`. Additionally, update the provided Flask API script to serve predictions made by your model.
+
+Implement your solution in Python, following professional coding practices (PEP8 compliance, modularity, clear function/class definitions, type hints). Provide either a script or Jupyter notebook that includes your technical analyses and findings. Your submission should include artifacts from the following:
 
 1. Clearly define the mathematical/statistical framing of the business problem.
 
@@ -25,7 +27,6 @@ Evaluate your model using appropriate metrics; conduct and visualize residual di
 6. Software Engineering Practices
 Organize your work within a Git repository using best practices (meaningful commits, branches, clear PR messages).
 
-
 ## Dataset
 
 The CSV dataset (data.csv) consists of the following columns:
@@ -46,16 +47,12 @@ The CSV dataset (data.csv) consists of the following columns:
 | `total_30d_post_campaign_spend` *(target)* | `float`   | Spend in 30 days post-campaign (response variable)                             |
 
 
-
 ## Evaluation
-We will evaluate your work sample by using your prediction script to make predictions
-against a test set that is hidden from you. Your code should be environment agnostic; 
-it should be possible to run it on any machine with a recent version of Python installed.
-Please be sure to give careful instructions explaining how to run your code
-to make these predictions.  
+We will evaluate your work sample by using your prediction script to predict the incremenetal return on ad spend for a future campaign. You will then use your model to predict iROAS for a test set of consumers targeted in future campaigns.
+
+Your code should be environment agnostic; it should be possible to run it on any machine with a recent version of Python installed. Please be sure to give careful instructions explaining how to run your code to make these predictions.  
 
 You will be evaluated via the following criteria:
 - Readability and cleanliness of your code
 - Ease of running your code to make new predictions
 - Quality of analysis
-- Improvement over provided model

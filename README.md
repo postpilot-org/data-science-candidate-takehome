@@ -3,7 +3,7 @@ PostPilot specializes in personalized direct-mail marketing campaigns to grow cu
 
 
 ## Objectives
-Your objectives are to train a model to predict `total_30d_post_campaign_spend` and update the provided Flask API script to serve predictions made by your model. Implement your solution in Python, following professional coding practices (PEP8 compliance, modularity, clear function/class definitions, type hints).Provide either a script or Jupyter notebook that includes your technical analyses and findings. Your submission should include artifacts from the following:
+Your objectives are to train a model to predict `total_30d_post_campaign_spend` and update the provided Flask API script to serve predictions made by your model. Implement your solution in Python, following professional coding practices (PEP8 compliance, modularity, clear function/class definitions, type hints). Provide either a script or Jupyter notebook that includes your technical analyses and findings. Your submission should include artifacts from the following:
 
 1. Clearly define the mathematical/statistical framing of the business problem.
 

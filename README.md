@@ -54,7 +54,7 @@ The CSV dataset (data.csv) consists of the following columns:
 
 
 ## Evaluation
-We will evaluate your work sample by using your prediction script to predict the incremenetal return on ad spend for a future campaign. You will then use your model to predict iROAS for a test set of consumers targeted in future campaigns.
+We will evaluate your work sample by using your prediction script to make predictions for each consumer in a holdout test set containing consumers targeted in future campaigns.
 
 Your code should be environment agnostic; it should be possible to run it on any machine with a recent version of Python installed. Please be sure to give careful instructions explaining how to run your code to make these predictions.  
 

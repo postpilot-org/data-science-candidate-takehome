@@ -11,10 +11,10 @@ Your objectives are to train a model to predict `total_30d_post_campaign_spend` 
 
 3. Methodology and Modeling Choices
 
-Be prepared to clearly explain:
-- the rationale behind your chosen modeling approach
-- trade-offs between predictive accuracy and interpretability
-- uncertainty quantification and robustness considerations
+    Be prepared to clearly explain:
+    - the rationale behind your chosen modeling approach
+    - trade-offs between predictive accuracy and interpretability
+    - uncertainty quantification and robustness considerations
 
 4. Feature Engineering & Selection
 Clearly document your feature-engineering process, especially any new features derived from raw variables (e.g., recency-weighted lifetime spend, interaction terms, embedding representations of categorical variables). _Provide justifications for the chosen features_.

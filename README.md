@@ -3,7 +3,13 @@ PostPilot specializes in personalized direct-mail marketing campaigns to grow cu
 
 
 ## Objectives
-You are given historic campaign data for a specific brand who will launch additional future campaigns. Your objective is to train a model to estimate the incremental return on ad spend (iROAS) for each of the historic campaigns in the training data using the target variable `total_30d_post_campaign_spend`. Additionally, update the provided Flask API script to serve predictions made by your model.
+You are given historic campaign data for a specific brand who will launch additional future campaigns. Your objective is to train a model to estimate the incremental return on ad spend (iROAS) 
+
+$$
+\text{iROAS} = \frac{\text{Total Treatment Group Spend - Total Control Group Spend}}{\text{Advertising Cost}}
+$$
+
+for each of the historic campaigns in the training data using the target variable `total_30d_post_campaign_spend`. The advertising cost associated with each campaign is the sum of the cost of each postcard mailed. _You can assume that this cost is constant across consumers and campaigns and is $0.70 per postcard mailed._ Additionally, update the provided Flask API script to serve predictions made by your model.
 
 Implement your solution in Python, following professional coding practices (PEP8 compliance, modularity, clear function/class definitions, type hints). Provide either a script or Jupyter notebook that includes your technical analyses and findings. Your submission should include artifacts from the following:
 

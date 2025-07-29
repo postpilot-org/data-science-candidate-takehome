@@ -17,20 +17,20 @@ Implement your solution in Python, following professional coding practices (PEP8
 
 2. Conduct exploratory data analysis to uncover meaningful patterns, distributions, and relationships. Visualize key distributions (e.g., target variable distribution demonstrating its heavy-tailed nature), and identify critical modeling challenges (e.g., data skewness, zero-inflation, heteroscedasticity, etc.).
 
-3. Methodology and Modeling Choices
+3. Methodology and Modeling Choices:
 
     Be prepared to clearly explain:
     - the rationale behind your chosen modeling approach
     - trade-offs between predictive accuracy and interpretability
     - uncertainty quantification and robustness considerations
 
-4. Feature Engineering & Selection
+4. Feature Engineering & Selection:
 Clearly document your feature-engineering process, especially any new features derived from raw variables (e.g., recency-weighted lifetime spend, interaction terms, embedding representations of categorical variables). _Provide justifications for the chosen features_.
 
-5. Model Evaluation & Diagnostics
+5. Model Evaluation & Diagnostics:
 Evaluate your model using appropriate metrics; conduct and visualize residual diagnostics to identify model strengths and weaknesses.
 
-6. Software Engineering Practices
+6. Software Engineering Practices:
 Organize your work within a Git repository using best practices (meaningful commits, branches, clear PR messages).
 
 ## Dataset
@@ -42,15 +42,15 @@ The CSV dataset (data.csv) consists of the following columns:
 | `customer_id`                              | `string`  | Unique customer identifier                                                     |
 | `campaign_id`                              | `string`  | Campaign identifier (`RETENTION_SUMMER`, `RETENTION_FALL`, `RETENTION_WINTER`) |
 | `campaign_send_date`                       | `date`    | Date campaign started                                                          |
-| `treatment_group`                          | `integer` | 1 if customer received campaign, 0 if control (imbalanced)                     |
+| `treatment_group`                          | `integer` | 1 if customer received campaign, 0 if control                     |
 | `historical_lifetime_spend`                | `float`   | Total past spend prior to campaign                                             |
-| `brand_affinity_score`                     | `float`   | Brand affinity score (0–1)                                                     |
-| `web_activity_score`                       | `float`   | Recent web browsing activity score                                             |
+| `brand_affinity_score`                     | `float`   | Brand affinity score 0 = no brand loyalty, 1 = very brand loyal                 |
+| `web_activity_score`                       | `float`   | Recent web browsing activity score (higher scores indicate more activity)                                            |
 | `days_since_last_purchase`                 | `float`   | Days since last purchase                                                       |
-| `price_sensitivity`                        | `float`   | Customer sensitivity to price                                                  |
+| `price_sensitivity`                        | `float`   | Customer sensitivity to price (0 = unaffected by price, 1 = very price sensitive)                                                 |
 | `email_open_rate`                 | `float`   | Email open rate (0–1)
 | `customer_tenure_days`          | `integer` | Number of days since first purchase                        |
-| `total_30d_post_campaign_spend` *(target)* | `float`   | Spend in 30 days post-campaign (response variable)                             |
+| `total_30d_post_campaign_spend`  | `float`   | Spend in 30 days post-campaign (response variable)                             |
 
 
 ## Evaluation

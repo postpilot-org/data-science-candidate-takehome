@@ -40,7 +40,7 @@ The CSV dataset (data.csv) consists of the following columns:
 | Column Name                                | Data Type | Description                                                                    |
 | ------------------------------------------ | --------- | ------------------------------------------------------------------------------ |
 | `customer_id`                              | `string`  | Unique customer identifier                                                     |
-| `campaign_id`                              | `string`  | Campaign identifier (`RETENTION_SUMMER`, `RETENTION_FALL`, `RETENTION_WINTER`) |
+| `campaign_id`                              | `string`  | Campaign identifier |
 | `campaign_send_date`                       | `date`    | Date campaign started                                                          |
 | `treatment_group`                          | `integer` | 1 if customer received campaign, 0 if control                     |
 | `historical_lifetime_spend`                | `float`   | Total past spend prior to campaign                                             |

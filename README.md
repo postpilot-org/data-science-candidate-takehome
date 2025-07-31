@@ -3,7 +3,7 @@ PostPilot specializes in personalized direct-mail marketing campaigns to grow cu
 
 
 ## Objectives
-You are given historic campaign data for a specific brand who will launch additional future campaigns. Your objective is to train a model to estimate the incremental return on ad spend (iROAS) 
+You are given historic campaign data (train_data.csv) for a specific brand who will launch additional future campaigns. Your objective is to train a model to estimate the _incremental return on ad spend_ (iROAS) 
 
 $$
 \text{iROAS} = \frac{\text{Total Treatment Group Spend - Total Control Group Spend}}{\text{Advertising Cost}}

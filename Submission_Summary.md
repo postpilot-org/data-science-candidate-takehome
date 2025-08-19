@@ -2,6 +2,14 @@
 
 > **Goal:** Estimate **incremental return on ad spend (iROAS)** for each campaign and serve predictions via an API.
 
+### Feature Importance Analysis
+
+**Key Finding:** Purchase recency dominates model predictions (importance: 92), followed by price sensitivity (43) and brand affinity (28). Treatment group shows zero importance, validating our causal modeling approach that avoids treatment label leakage.
+
+**Core Insight:** Behavioral signals (when customers last purchased, price sensitivity) far outweigh historical metrics (lifetime spend, tenure). The 15x importance gap between recency and other features reveals that campaign timing relative to customer activity is the critical success factor.
+
+**Business Implication:** Focus campaign targeting on recently active customers (<30 days since purchase), implement price-sensitivity segmentation for differentiated offers, and simplify targeting rules to prioritize recency over complex scoring models.
+
 
 ## Table of Contents
 - [1) Business Framing To Modeling Target](#1-business-framing-to-modeling-target)
